@@ -29,7 +29,5 @@ cat ./quarkus-api/src/test/kotlin/co/my/app/CliTest.kt
 
 ```
 # https://quarkus.io/guides/gradle-tooling#building-a-native-executable
-./gradlew build -Dquarkus.package.type=native
-
-./
+./gradlew clean build -Dquarkus.package.type=native && ./quarkus-api/build/quarkus-api-unspecified-runner
 ```
